@@ -1,0 +1,182 @@
+-------------------------
+Obra
+-------------------------
+-ID
+Matricula
+MAtriula Tecnica
+-Tipo de Adquisicion
++Ubicaciones (Nombre, estado)
+-Propietario (ID, Nombre, Estado)
+-Tipo de Objeto
+fecha de registro
+fecha de ingreso
+-usuario capturo
+fecha de baja
+-estado
+
+
+-------------------------
+Posibles Atributos que puede contener la Obra
+-------------------------
+-Autor (Nombre, Apellido, Lugar Nacimiento, Lugar Muerte, Año Nacimiento, Año Muerte, Observaciones)
+Titulo
+Titulo Original
+Titulo Otros
+-Escuela Artistica
+-Tipo Adquisicion
+-Procedencia
+-Filiacion Estilistica
+-Casa Comercial
+-Estado de Conervacion
+Descripcion
+Materiales
+-Catalogo (nombre, clave, estatus)
+Palabras clave
+-Tipo Marco
+-Tecnica Marco
+Descripcion Marco
+Fecha ejecucion
+Numero de Piezas
+Clave Material
+Marcas Inscripciones
+Marcas
+Observaciones
+Numeros Anteriores
+Bibliografia
+-Asesor1
+-Asesor2
++Foto (Titulo, Descripcion, Ruta)
+-Dimencion (-PesoUM, -LongitudUM, alto, ancho, profundo, diametro, diametro2, peso, otra)
+
+Monedas ----------------------
+-ObraID
+-Epoca
+Quinto
+Ley
+Ceca
+Canto
+IDoc
+RInt
+Tipo
+Giro
+DAniv
+Anv
+LAnv
+IAnv
+DRev
+Rev
+LRev
+IRev
+
+Billetes ----------------------
+-ObraID
+inic
+para
+geo
+otrosaut
+tipodoc
+fechadd
+fechaaprox
+inscipcion anverso
+inscripcion reverso
+
+
+
+
+
+
+
+---------------------------------------
+Usuarios
+---------------------------------------
+Id
+Contraseña
+Nombre
+Apellido1
+Apellido2
+correo
+-departamento (Nombre, estado)
+-puesto (Nombre, estado)
+-permiso
+contraseñaOK
++permisos
+monitoreo
+
+
+
+
+
+
+-----------------------------------------
+Movimiento
+-----------------------------------------
+MovimientoID
+TipoMovimientoID
+UbicacionOrigen
+UbicacionDestino
+Estado
+
+Mov_FReg
+Mov_FSal
+Mov_FRet
+
+Mov_Sol_Nomb
+Mov_Sol_Puesto
+Mov_Sol_Inst
+Mov_Sol_Repre
+Mov_Sol_RCargo
+
+Mov_Expo
+Mov_ExpTit
+Mov_ExpResp
+Mov_ExpCtro
+Mov_ExpLocal
+Mov_ExpFInic
+Mov_ExpFTerm
+
+Mov_Com_Nombre
+Mov_Com_Inst
+Mov_Com_FSal
+Mov_Com_FRet
+
+Mov_Aut_Nombre
+Mov_Aut_Fech
+
+Mov_Trans_Emp
+Mov_Trans_Recorr
+Mov_Trans_Horarios
+Mov_Trans_Notas
+
+Mov_Ava_monto
+Mov_Ava_Fecha
+
+Mov_Seg_Asegu
+Mov_Seg_NP
+Mov_Seg_FInic
+Mov_Seg_FFinal
+Mov_Seg_Notas
+
+Observaciones
+
+Mov_DicEspa
+Mov_DicSeg
+Mov_Recep
+Mov_Faci
+Mov_Guion
+Mov_Carta
+Mov_Lista
+Mov_Comodato
+Fianza
+Poliza
+Mov_CC
+Mov_MovSeg
+Mov_CER
+Mov_Ori
+Mov_Dest
+Mov_Col
+hora
+cve_ori
+
+Estatus
+Aplicado
+
