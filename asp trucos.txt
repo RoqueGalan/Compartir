@@ -1,0 +1,105 @@
+Formatear CTRL + K-D
+
+---------
+1.- Crear el Proyecto
+2.- Habilitar el Entity en el Proyecto:
+	*Consola: Install-Package EntityFramework
+3.- Crear las clases que vamos a ocupar con sus 
+propiedades y relaciones a otras tablas
+	Las clases tienen que ser public, para que
+	no marque error.
+4.- Crear el contexto de la BD:
+	*En proyecto crear una carpeta llamada DAL
+	y dentro una clase del contexto
+	*Especificar a que BD se conectara	
+	*Colocar el nombre de las tablas en plural
+5.- Crear un inicializador:
+	Crear clase en DAL
+	LLenar la bd desde esta clase
+6.- Agregar el contexto en web.config:
+	Archivo global Web.config
+	colocar el <contexts>
+7.- Agregar la cadena de conexion:
+	archivo web.config.
+	antes de appSetting pegar la cadena de conexion
+
+8.- Crear El controlador y vista para Estudiante
+	carpeta controller clic y elemento scaffolding
+	crear controlador mvc5 con entity
+-------------------------
+9.- Implementar un GRUD basico
+	*En detalles de Alumno mostrar sus registros 
+	a los cursos
+10.- Actualizar Crear en el metodo POST
+	colocar un try catch en Create
+11.- Blindar contra over-postting 
+	*en Estudiante agregar propiedad Secret
+12.- Tiene validador basico
+13.- Actualizar la pagina Edit HttpPost
+	*colocar try catch
+14.- Actualizar metodo alumno DeleteConfirmed POST
+	*colocar un try catch
+	*cambiar de nombre a Delete
+15.- Actualizar metodo alumno Delete GET
+	*cambiar la seguridad
+
+------------------------------
+AGREGAR ORDENAR, BUSCAR y PAGINADOR
+PAG 57
+
+
+
+------------------------------
+RESISTENCIA DE CONEXION
+.- Crear clase EjUniversidadConfiguration en DAL
+.- En EstudianteController agregar:
+	*using System.Data.Entity.Infrastructure;
+	*Cambiar todos los catch por:
+		*catch (RetryLimitExceededException /* dex */)
+
+------------------------------
+CREACION DE LOGGING INTERFACE
+.-Copiar carpeta Loggin a la raiz 
+.-Receptor de clases:
+	Crear clase EjUniversidadInterceptorLogging.cs en DAL
+	Crear clase EjUniversidadInterceptorTransientErrors.cs en DAL
+	Global.axa agregar:
+		DbInterception.Add(new EjUniversidadInterceptorTransientErrors()); 
+		DbInterception.Add(new EjUniversidadInterceptorLogging());
+
+
+----------------------------
+HABILITAR CODE FIRST MIGRATIONS
+.-Deshabilitar el contexto:
+	*Web.config:
+		*Eliminar o comentar el <context>
+		*Cambiar nombre a la BD por 2 en <connectionStrings>
+.-Consola ejecutar:
+	*enable-migrations 
+	*add-migration InitialCreate
+.-Build el proyecto
+
+.-Actualizar Esquema de la BD:
+	Consola: 
+	*Add-Migration <nombre x>
+	*update-database
+
+
+------------------------------
+------------------------------
+------------------------------
+------------------------------
+CREAR MODELO MAS COMPLEJO
+1.-usar anotaciones para cada tipo de dato
+
+
+
+----------------------------------------
+----------------------------------------
+----------------------------------------
+Si se utiliza BD first utilizar en
+la clase parcial
+[MetadataTypeAttribute(typeof(ValTipoNombre))]
+
+
+	
