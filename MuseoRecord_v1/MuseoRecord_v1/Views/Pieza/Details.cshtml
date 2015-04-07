@@ -1,0 +1,50 @@
+﻿@model MuseoRecord_v1.Models.Pieza
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Pieza</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Obra.Titulo)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Obra.Titulo)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TipoPieza.Nombre)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TipoPieza.Nombre)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Matricula)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Matricula)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.MatriculaTecnica)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MatriculaTecnica)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.PiezaID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

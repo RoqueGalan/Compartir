@@ -1,0 +1,7 @@
+Crear Usuario.
+
+Crear Departamento.
+
+Crear Puesto: Departamento - Puesto
+
+Crear TipoPermiso: Puesto

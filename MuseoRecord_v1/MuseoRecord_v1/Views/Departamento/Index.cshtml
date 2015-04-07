@@ -1,0 +1,40 @@
+﻿@model IEnumerable<MuseoRecord_v1.Models.Departamento>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Nuevo Departamento", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Nombre)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Estado)
+        </th>
+
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Nombre)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Estado)
+        </td>
+        <td>
+            @Html.ActionLink("Editar", "Edit", new { id = item.DepartamentoID }) |
+            @Html.ActionLink("Detalles", "Details", new { id=item.DepartamentoID }) |
+            @Html.ActionLink("Eliminar", "Delete", new { id=item.DepartamentoID })
+        </td>
+    </tr>
+}
+
+</table>

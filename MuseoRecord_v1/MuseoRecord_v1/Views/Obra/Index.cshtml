@@ -1,0 +1,75 @@
+﻿@model IEnumerable<MuseoRecord_v1.Models.Obra>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Propietario.Nombre)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TipoAdquision.Nombre)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TipoObra.Nombre)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Titulo)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Matricula)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.MatriculaTecnica)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Comodato)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Estado)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Propietario.Nombre)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.TipoAdquision.Nombre)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.TipoObra.Nombre)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Titulo)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Matricula)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.MatriculaTecnica)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Comodato)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Estado)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.ObraID }) |
+            @Html.ActionLink("Details", "Details", new { id=item.ObraID }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.ObraID })
+        </td>
+    </tr>
+}
+
+</table>

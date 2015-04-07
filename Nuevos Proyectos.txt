@@ -1,0 +1,9 @@
+Habilitar entity
+	>Install-Package EntityFramework
+
+Habilitar migraciones
+	>Enable-Migrations
+
+ACtualizar la bd
+	>Update-Database -Verbose
+	

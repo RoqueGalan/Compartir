@@ -1,0 +1,46 @@
+﻿@model IEnumerable<MuseoRecord_v1.Models.Puesto>
+
+@{
+    ViewBag.Title = "Lista";
+}
+
+<h2>Puestos de @ViewBag.departamento.Nombre</h2>
+
+<p>
+    @Html.ActionLink("Crear Puesto", "Create", new { id = ViewBag.departamento.DepartamentoID }) |
+
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Departamento.Nombre)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Nombre)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Estado)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Departamento.Nombre)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Nombre)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Estado)
+        </td>
+        <td>
+            @Html.ActionLink("Editar", "Edit", new { id=item.PuestoID }) |
+            @Html.ActionLink("Detalles", "Details", new { id=item.PuestoID }) |
+            @Html.ActionLink("Eliminar", "Delete", new { id=item.PuestoID })
+        </td>
+    </tr>
+}
+
+</table>

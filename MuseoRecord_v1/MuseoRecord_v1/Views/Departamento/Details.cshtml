@@ -1,0 +1,48 @@
+﻿@model MuseoRecord_v1.Models.Departamento
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Departamento</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Nombre)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Nombre)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Estado)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Estado)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Puestos)
+        </dt>
+
+        <dd>
+            <ul>
+                @foreach (var item in Model.Puestos)
+                {
+                    <li>@Html.ActionLink(@item.Nombre, "Details/" + item.PuestoID, "Puesto")</li>
+                }
+                <li><i class="glyphicon glyphicon-plus"></i>@Html.ActionLink("Nuevo Puesto", "Create/" + Model.DepartamentoID, "Puesto")</li>
+            </ul>
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Editar", "Edit", new { id = Model.DepartamentoID }) |
+    @Html.ActionLink("Regresar", "Index")
+</p>
