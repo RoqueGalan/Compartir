@@ -1,0 +1,11 @@
+Tabla Estatus
+
+Obras
+0 - Eliminada
+1 - Activa
+2 - Reparacion
+3 - Pendiente
+4 - Comodato
+
+
+

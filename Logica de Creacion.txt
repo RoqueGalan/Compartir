@@ -1,7 +1,97 @@
+L O G I C A   A U T E N T I F I C A C I O N
+
 Crear Usuario.
 
 Crear Departamento.
 
-Crear Puesto: Departamento - Puesto
+Crear Puesto: Departamento - Puesto.
 
-Crear TipoPermiso: Puesto
+Crear TipoPermiso.
+
+Crear Permiso: Departamento - Puesto - Permiso.
+
+
+
+
+
+L O G I C A   O B R A S
+
+Crear TipoObra.
+
+Crear Propietario.
+
+Crear TipoAdquisicion
+
+Crear Obra.
+
+Crear Pieza: Obra - Pieza.
+
+
+
+
+
+L O G I C A   P I E Z A S
+
+Crear TipoPieza: TipoObra - TipoPieza.
+
+Crear Estructura: TipoObra - TipoPieza - Estructura.
+
+Crear TipoAtributo.
+
+Crear ListaValor: TipoAtributo - ListaValor.
+
+Crear Atributo: Obra - Pieza - Atributo.
+
+
+
+
+L O G I C A   A T R I B U T O S    G E N E R A L E S
+
+Crear Autor.
+
+Crear PiezaAutor: Obra - Pieza - PiezaAutor.
+
+Crear TipoConservacion.
+
+Crear Conservacion: Obra - Pieza- Conservacion.
+
+Crear Imagen: Obra - Pieza - Imagen.
+
+
+
+
+
+L O G I C A   C O L E C C I O N     D E    O B R A S
+
+
+L O G I C A   E N T R A D A S    Y    S A L I D A S    O B R A
+
+
+L O G I C A   H I S T O R I A L
+
+
+
+
+
+
+C A T A L O G O S
+
+Departamento.
+
+TipoObra.
+
+Propietario.
+
+TipoAdquisicion.
+
+TipoAtributo.
+
+Autor.
+
+TipoConservacion.
+
+TipoColeccion.
+
+ListaValor.
+
+

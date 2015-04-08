@@ -6,4 +6,7 @@ Habilitar migraciones
 
 ACtualizar la bd
 	>Update-Database -Verbose
+
+Habilitar MApa de Sitios
+	>Install-Package MvcSiteMapProvider.MVC5.Core
 	
