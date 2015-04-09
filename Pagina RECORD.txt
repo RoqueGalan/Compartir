@@ -1,0 +1,6 @@
+Configuracion Museo
+RECORD
+PAgina: http://172.16.24.216/museoNew
+
+Usuario: RoqueGalan
+Password: roque2015

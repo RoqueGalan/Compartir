@@ -1,11 +1,30 @@
 Tabla Estatus
 
+Tipo Obra
+0 - Inactivo
+1 - Activo
+
+Tipo Pieza
+0 - Inactivo
+1 - Activo
+
+Estructura
+0 - Inactivo
+1 - Activo
+
+
+
 Obras
-0 - Eliminada
-1 - Activa
+7 - Captura
+6 - Curaduria
+5 - PreRegistro
+4 - Traslado
+3 - Disponible
 2 - Reparacion
-3 - Pendiente
-4 - Comodato
+1 - Comodato
+0 - Eliminada
+
+
 
 
 

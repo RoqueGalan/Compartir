@@ -1,0 +1,45 @@
+Matriculas de Tablas
+
+TipoObjeto		1
+Filiacion Artistica	3
+Ubicacion		4
+Estado de Conservacion	7
+monedas			7
+Forma de Adquisicion	8
+Autores			10
+Billetes		12
+Catalogo		13
+GibranCEHM		13
+Procedencia		15
+???ClassColeccion	16
+Coleccion		16
+Escuela Artistica	20
+UMLongitud		21
+UMPeso			22
+Casa Comercial		23
+Propierario		24
+Puesto			25
+TipoPieza		26
+m_otras_piezas		26
+Fecha Ejecucion		27
+Departamento		28
+CEHMAlbaRojo		36
+m_pieza			???
+Estados			Normal
+Pais			Normal
+m_cats			normal
+guion			normal
+movimientos		normal
+m_pieza_coleccion	normal
+m_pieza_descripcion	normal
+m_pieza_dimenciones	normal
+m_pieza_foto		normal
+
+
+
+
+
+
+
+
+

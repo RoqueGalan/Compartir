@@ -95,3 +95,10 @@ TipoColeccion.
 ListaValor.
 
 
+
+----------------------------------------
+----------------------------------------
+----------------------------------------
+Crear TipoObra
+	Se crea en automatico la pieza maestr
+
