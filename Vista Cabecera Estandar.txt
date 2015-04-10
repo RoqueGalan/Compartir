@@ -1,0 +1,43 @@
+Vistas
+
+Cabecera Padre:
+	Index:
+		h3 - Vista
+
+	Crear:
+		h3 - Vista
+		h4 - Tabla
+
+	Editar:
+		h3 - Vista
+		h2 - Campo
+		h4 - Tabla
+	
+	Eliminar:
+		h3 - Vista
+		h2 - Campo
+		h4 - Tabla
+Cabecera Hija:
+	Index:
+		h3 - Vista
+		h2 - Campo Padre
+		h4 - Tabla
+
+	Crear:
+		h3 - Vista
+		h2 - Campo Padre
+		h4 - Tabla
+
+	Editar:
+		h3 - Vista
+		h2 - Campo Padre
+		h3 - Campo
+		h4 - Tabla
+	
+	Eliminar:
+		h3 - Vista
+		h2 - Campo Padre
+		h3 - Campo
+		h4 - Tabla
+
+
