@@ -1,0 +1,9 @@
+﻿@model IEnumerable<SistemaMVC5.Models.Person>
+
+@Html.DisplayForModel(Model)
+
+@if (!Model.Any())
+{
+    <h3>Sorry!</h3>
+    <p>Looks like there's no results for that person.</p>
+}

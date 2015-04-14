@@ -1,0 +1,16 @@
+﻿@model SistemaMVC5.Models.Person
+
+@{
+    ViewBag.Title = "Index";
+    var likesMusic = Model.LikesMusic ? "active" : null;
+    var notAMusicFan = !Model.LikesMusic ? "active" : null;
+}
+
+<div class="page-header">
+    <h1>
+        Welcome to the Person Page
+        <small>Read all about @Model.FirstName</small>
+    </h1>
+</div>
+
+@Html.DisplayForModel(Model)
