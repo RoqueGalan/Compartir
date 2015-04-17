@@ -4,3 +4,22 @@ PAgina: http://172.16.24.216/museoNew
 
 Usuario: RoqueGalan
 Password: roque2015
+
+
+
+Coleccion
+
+--------
+Titulo
+Autor
+Fecha Ejecucion
+Tecnica
+--------
+Observaciones
+Medidas
+Propietario
+Estado de Conservacion
+
+
+Fecha de Registro
+
